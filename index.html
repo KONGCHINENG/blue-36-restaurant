@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blue 36 Cafe | Brunch & Coffee on Blue St, North Sydney</title>
+<meta name="description" content="Blue 36 Cafe in Greenwood Plaza, 36 Blue St, North Sydney. Brunch plates, bowls, burgers and specialty coffee by North Sydney Station. Call (02) 9221 2427.">
+<link rel="canonical" href="https://blue36cafe.com.au/">
+<meta name="theme-color" content="#F3F5F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1220" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Blue 36 Cafe">
+<meta property="og:title" content="Blue 36 Cafe | Brunch on Blue Street, North Sydney">
+<meta property="og:description" content="Brunch plates, bowls and specialty coffee in Greenwood Plaza, right by North Sydney Station.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_AU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blue 36 Cafe | Brunch on Blue Street">
+<meta name="twitter:description" content="Brunch plates, bowls and specialty coffee by North Sydney Station.">
+<meta name="twitter:image" content="img/og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E4FD8'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='800' font-size='30' text-anchor='middle' fill='white'%3E36%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Schibsted+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="preload" as="image" href="img/19-1400.webp" imagesrcset="img/19-720.webp 540w, img/19-1400.webp 1050w" imagesizes="(min-width: 900px) 45vw, 100vw">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Blue 36 Cafe",
+  "image": "img/og.jpg",
+  "telephone": "+61 2 9221 2427",
+  "servesCuisine": ["Brunch", "Cafe", "Coffee"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shop P02, Greenwood Plaza, 36 Blue St",
+    "addressLocality": "North Sydney",
+    "addressRegion": "NSW",
+    "postalCode": "2060",
+    "addressCountry": "AU"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -33.8407323, "longitude": 151.2075779 },
+  "hasMap": "https://maps.app.goo.gl/XGDb5CXQW2yVN7CA8",
+  "hasMenu": "https://blue36cafe.com.au/#menu",
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Friday"], "opens": "06:00", "closes": "15:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday"], "opens": "06:00", "closes": "15:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:00", "closes": "14:00" }
+  ],
+  "sameAs": ["https://www.facebook.com/blue36cafe/", "https://www.instagram.com/blue36cafe_northsydney"]
+}
+</script>
+<script>
+  // Apply saved theme before paint to avoid a flash.
+  try { var t = localStorage.getItem('b36-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<style>
+:root {
+  --bg: #F3F5F8;
+  --surface: #FFFFFF;
+  --surface-2: #E8ECF2;
+  --ink: #0E1726;
+  --muted: #4A5568;
+  --line: #D5DCE6;
+  --accent: #1E4FD8;
+  --accent-ink: #FFFFFF;
+  --accent-soft: rgba(30, 79, 216, .09);
+  --shadow: 0 1px 2px rgba(14, 23, 38, .06), 0 12px 32px -12px rgba(30, 50, 90, .18);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --ease-out: cubic-bezier(.23, 1, .32, 1);
+  --ease-in-out: cubic-bezier(.77, 0, .175, 1);
+  --display: "Schibsted Grotesk", system-ui, sans-serif;
+  --body: "Figtree", system-ui, sans-serif;
+  --gutter: clamp(16px, 4vw, 40px);
+  --nav-h: 68px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0B1220; --surface: #121B2E; --surface-2: #18233A; --ink: #E9EEF6; --muted: #9AA6B8;
+    --line: #243250; --accent: #6E95FF; --accent-ink: #0B1220; --accent-soft: rgba(110, 149, 255, .12);
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 16px 40px -16px rgba(0, 0, 0, .6);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0B1220; --surface: #121B2E; --surface-2: #18233A; --ink: #E9EEF6; --muted: #9AA6B8;
+  --line: #243250; --accent: #6E95FF; --accent-ink: #0B1220; --accent-soft: rgba(110, 149, 255, .12);
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 16px 40px -16px rgba(0, 0, 0, .6);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 16px); -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--body);
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.05; letter-spacing: -.025em; margin: 0; text-wrap: balance; }
+h2 { font-size: clamp(2rem, 4.4vw, 3.4rem); font-weight: 800; }
+p { margin: 0; text-wrap: pretty; }
+::selection { background: var(--accent); color: var(--accent-ink); }
+:focus-visible { outline: 2.5px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.wrap { width: min(1240px, 100%); margin-inline: auto; padding-inline: var(--gutter); }
+.section { padding-block: clamp(72px, 10vw, 136px); }
+.lede { color: var(--muted); font-size: 1.125rem; max-width: 52ch; }
+.eyebrow { font: 600 .8125rem/1 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--accent); color: var(--accent-ink); padding: 10px 16px; border-radius: 10px; text-decoration: none; transition: top .2s var(--ease-out); }
+.skip:focus { top: 12px; }
+.tbc { /* Placeholder marker: anything the owner still has to supply */
+  display: inline-flex; align-items: center; gap: 6px;
+  font: 600 .75rem/1 var(--body); letter-spacing: .02em;
+  color: var(--accent); background: var(--accent-soft);
+  border: 1px dashed color-mix(in srgb, var(--accent) 45%, transparent);
+  padding: 5px 9px; border-radius: 999px; white-space: nowrap;
+}
+
+/* Buttons */
+.btn {
+  --h: 52px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: var(--h); padding: 0 24px; border-radius: 999px;
+  font: 600 1rem/1 var(--body); text-decoration: none; white-space: nowrap;
+  border: 1.5px solid transparent; cursor: pointer;
+  transition: transform .16s var(--ease-out), background-color .2s var(--ease-out), border-color .2s var(--ease-out), color .2s var(--ease-out), box-shadow .2s var(--ease-out);
+}
+.btn:active { transform: scale(.97); }
+.btn i { font-size: 1.2em; transition: transform .25s var(--ease-out); }
+.btn-primary { background: var(--accent); color: var(--accent-ink); box-shadow: 0 8px 20px -10px color-mix(in srgb, var(--accent) 80%, transparent); }
+.btn-ghost { border-color: var(--line); background: var(--surface); }
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover { background: color-mix(in srgb, var(--accent) 88%, var(--ink)); }
+  .btn-ghost:hover { border-color: var(--ink); }
+  .btn:hover i.ph-arrow-up-right, .btn:hover i.ph-arrow-right { transform: translateX(3px); }
+}
+
+/* Nav */
+.nav {
+  position: sticky; top: 0; z-index: 50; height: var(--nav-h);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: saturate(160%) blur(14px); -webkit-backdrop-filter: saturate(160%) blur(14px);
+  border-bottom: 1px solid transparent; transition: border-color .3s var(--ease-out);
+}
+.nav.scrolled { border-bottom-color: var(--line); }
+.nav .wrap { height: 100%; display: flex; align-items: center; gap: 24px; }
+.logo { display: inline-flex; flex-direction: column; text-decoration: none; line-height: 1; margin-right: auto; }
+.logo b { font: 800 1.375rem/1 var(--display); letter-spacing: .06em; }
+.logo b span { color: var(--accent); }
+.logo small { font: 600 .6875rem/1 var(--body); letter-spacing: .24em; color: var(--muted); margin-top: 5px; }
+.nav-links { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
+.nav-links a { display: block; padding: 10px 14px; border-radius: 999px; text-decoration: none; font-weight: 500; font-size: .9875rem; color: var(--muted); transition: color .2s var(--ease-out), background-color .2s var(--ease-out); }
+.nav-links a:hover { color: var(--ink); background: var(--surface-2); }
+.icon-btn { width: 44px; height: 44px; border-radius: 999px; display: grid; place-items: center; border: 1px solid var(--line); background: var(--surface); cursor: pointer; transition: transform .16s var(--ease-out), border-color .2s; }
+.icon-btn:active { transform: scale(.94); }
+.icon-btn i { font-size: 1.25rem; }
+.nav .btn { --h: 44px; padding: 0 18px; font-size: .9375rem; }
+.menu-toggle { display: none; }
+@media (max-width: 900px) {
+  .nav-links, .nav .btn { display: none; }
+  .menu-toggle { display: grid; }
+}
+.drawer {
+  position: fixed; inset: var(--nav-h) 0 auto 0; z-index: 49; background: var(--bg); border-bottom: 1px solid var(--line);
+  padding: 8px var(--gutter) 24px; display: grid; gap: 2px;
+  transform: translateY(-8px); opacity: 0; visibility: hidden;
+  transition: transform .25s var(--ease-out), opacity .2s var(--ease-out), visibility 0s .25s;
+}
+.drawer.open { transform: none; opacity: 1; visibility: visible; transition-delay: 0s; }
+.drawer a:not(.btn) { padding: 14px 4px; font: 700 1.5rem/1.1 var(--display); text-decoration: none; border-bottom: 1px solid var(--line); }
+.drawer .btn { margin-top: 16px; }
+
+/* Hero */
+.hero { position: relative; padding-block: clamp(28px, 5vw, 64px) clamp(56px, 7vw, 96px); overflow: hidden; }
+.hero .wrap { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: clamp(32px, 5vw, 72px); }
+.hero-copy { position: relative; z-index: 1; }
+.hero h1 { font-size: clamp(3.1rem, 7.4vw, 6.4rem); font-weight: 800; letter-spacing: -.04em; line-height: .95; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero .lede { margin-top: 24px; font-size: clamp(1.125rem, 1.6vw, 1.3rem); max-width: 34ch; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+.hero-media { position: relative; z-index: 1; }
+.hero-media img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px; box-shadow: var(--shadow); }
+.hero-media .mini {
+  position: absolute; left: -36px; bottom: 36px; width: 38%; aspect-ratio: 1; object-fit: cover;
+  border-radius: 18px; border: 5px solid var(--bg); box-shadow: var(--shadow);
+}
+@media (max-width: 900px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .hero-media .mini { left: auto; right: 16px; bottom: -28px; width: 34%; }
+  .hero-media img:first-child { aspect-ratio: 4 / 4.4; }
+}
+
+/* Facts strip */
+.facts { border-block: 1px solid var(--line); background: var(--surface); }
+.facts .wrap { display: grid; grid-template-columns: repeat(3, 1fr); }
+.fact { display: flex; gap: 14px; align-items: flex-start; padding: 26px 24px; text-decoration: none; }
+.fact + .fact { border-left: 1px solid var(--line); }
+.fact i { font-size: 1.5rem; color: var(--accent); margin-top: 2px; }
+.fact b { display: block; font-weight: 600; }
+.fact span { color: var(--muted); font-size: .9375rem; }
+a.fact { transition: background-color .2s var(--ease-out); }
+a.fact:hover { background: var(--surface-2); }
+@media (max-width: 900px) {
+  .facts .wrap { grid-template-columns: 1fr; padding-inline: 0; }
+  .fact { padding: 18px var(--gutter); }
+  .fact + .fact { border-left: 0; border-top: 1px solid var(--line); }
+}
+
+/* About */
+.about .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 7vw, 104px); align-items: center; }
+.about-media { position: relative; padding: 0 12% 14% 0; }
+.about-media img { border-radius: var(--radius); object-fit: cover; box-shadow: var(--shadow); }
+.about-media .a1 { width: 100%; aspect-ratio: 4 / 5; }
+.about-media .a2 { position: absolute; right: 0; bottom: 0; width: 52%; aspect-ratio: 3 / 4; border: 6px solid var(--bg); }
+.about h2 { margin-top: 18px; }
+.about .lede + .lede { margin-top: 16px; }
+.about .lede:first-of-type { margin-top: 24px; }
+.owner-note { margin-top: 28px; padding: 18px 20px; border-radius: var(--radius-sm); border: 1px dashed var(--line); color: var(--muted); font-size: .9375rem; display: grid; gap: 10px; justify-items: start; }
+@media (max-width: 900px) { .about .wrap { grid-template-columns: 1fr; } }
+
+/* Signature bento */
+.sig h2 { max-width: 16ch; }
+.sig .lede { margin: 16px 0 0; }
+.sig .wrap > .tbc { display: inline-flex; }
+.bento { margin-top: 48px; display: grid; gap: 16px; grid-template-columns: 1.1fr 1fr 1fr 1.1fr; grid-template-rows: 300px 300px; }
+.dish { margin: 0; display: flex; flex-direction: column; min-height: 0; }
+.dish .frame { flex: 1; min-height: 0; overflow: hidden; border-radius: var(--radius); background: var(--surface-2); }
+.dish img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease-out); }
+.dish figcaption { padding: 12px 2px 0; display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.dish figcaption b { font: 700 1.0625rem/1.25 var(--display); letter-spacing: -.01em; }
+.dish figcaption span { color: var(--muted); font-size: .875rem; white-space: nowrap; }
+@media (hover: hover) and (pointer: fine) { .dish:hover img { transform: scale(1.04); } }
+.d1 { grid-column: 1; grid-row: 1 / 3; }
+.d2 { grid-column: 2 / 4; grid-row: 1; }
+.d3 { grid-column: 4; grid-row: 1 / 3; }
+.d4 { grid-column: 2; grid-row: 2; }
+.d5 { grid-column: 3; grid-row: 2; }
+@media (max-width: 960px) {
+  .bento { grid-template-columns: 1fr 1fr; grid-template-rows: none; grid-auto-rows: 250px; }
+  .d2 { grid-column: 1 / -1; grid-row: 1; }
+  .d1 { grid-column: 1; grid-row: 2 / 4; }
+  .d3 { grid-column: 2; grid-row: 2 / 4; }
+  .d4 { grid-column: 1; grid-row: 4; }
+  .d5 { grid-column: 2; grid-row: 4; }
+}
+@media (max-width: 560px) {
+  .bento { grid-auto-rows: 190px; gap: 12px; }
+  .dish figcaption b { font-size: .9375rem; }
+}
+
+/* Menu */
+.menu { background: var(--surface); border-block: 1px solid var(--line); }
+.menu-head { display: grid; gap: 16px; justify-items: start; }
+.tabs { display: inline-flex; gap: 4px; padding: 5px; border-radius: 999px; background: var(--surface-2); margin-top: 36px; max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+.tab {
+  position: relative; border: 0; background: transparent; cursor: pointer; min-height: 44px; padding: 0 20px; border-radius: 999px;
+  font-weight: 600; color: var(--muted); white-space: nowrap; transition: color .2s var(--ease-out);
+}
+.tab[aria-selected="true"] { color: var(--ink); }
+.tab-pill { position: absolute; z-index: 0; top: 5px; left: 0; height: calc(100% - 10px); border-radius: 999px; background: var(--surface); box-shadow: 0 1px 3px rgba(14, 23, 38, .12); transition: transform .25s var(--ease-out), width .25s var(--ease-out); }
+.tabs { position: relative; }
+.tab span { position: relative; z-index: 1; }
+.menu-sub { color: var(--muted); }
+.panel { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px clamp(32px, 6vw, 88px); align-items: start; }
+.panel[hidden] { display: none; }
+.group.wide { grid-column: 1 / -1; }
+.group.wide .items { display: grid; grid-template-columns: 1fr 1fr; column-gap: clamp(32px, 6vw, 88px); }
+.group-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--ink); }
+.group-head h3 { font-size: 1.375rem; font-weight: 800; }
+.group-head .cols { font-size: .8125rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.group-note { color: var(--muted); font-size: .875rem; margin-top: 10px; }
+.item { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.item-top { display: flex; align-items: baseline; gap: 10px; }
+.item-top b { font: 700 1.0625rem/1.3 var(--display); letter-spacing: -.01em; }
+.item-top .dots { flex: 1; min-width: 12px; border-bottom: 1.5px dotted var(--line); transform: translateY(-4px); }
+.price { font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.item p { color: var(--muted); font-size: .9375rem; margin-top: 3px; }
+.item .protein { color: var(--accent); font-size: .8125rem; font-weight: 600; margin-top: 3px; }
+.tags { display: inline-flex; gap: 4px; margin-left: 2px; transform: translateY(-2px); }
+.tags abbr { text-decoration: none; font: 700 .6875rem/1 var(--body); letter-spacing: .02em; color: var(--accent); background: var(--accent-soft); padding: 3px 5px; border-radius: 5px; cursor: help; }
+.opts { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 4px; }
+.opts li { display: flex; gap: 10px; align-items: baseline; font-size: .9375rem; }
+.opts li span:first-child { color: var(--ink); }
+.opts .dots { flex: 1; border-bottom: 1.5px dotted var(--line); transform: translateY(-4px); }
+.addon { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.addon .price { min-width: 2.5ch; color: var(--accent); }
+.addon p { color: var(--muted); font-size: .9375rem; }
+.menu-foot { margin-top: 48px; display: grid; grid-template-columns: 1fr auto; gap: 16px 32px; align-items: center; color: var(--muted); font-size: .9375rem; padding: 20px 24px; border-radius: var(--radius); background: var(--bg); }
+.menu-foot p + p { margin-top: 4px; }
+@media (max-width: 760px) {
+  .panel, .group.wide .items { grid-template-columns: 1fr; }
+  .panel { gap: 40px; }
+  .menu-foot { grid-template-columns: 1fr; padding: 18px; }
+}
+
+/* Coffee rail */
+.coffee .head { display: flex; justify-content: space-between; align-items: end; gap: 24px; }
+.rail-btns { display: flex; gap: 8px; }
+.rail {
+  margin-top: 40px; display: grid; grid-auto-flow: column; grid-auto-columns: clamp(240px, 26vw, 320px); gap: 16px;
+  overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter);
+  padding-inline: max(var(--gutter), calc((100vw - 1240px) / 2 + var(--gutter))); padding-bottom: 8px;
+  scrollbar-width: none; overscroll-behavior-x: contain;
+}
+.rail::-webkit-scrollbar { display: none; }
+.cup { margin: 0; scroll-snap-align: start; }
+.cup .frame { border-radius: var(--radius); overflow: hidden; aspect-ratio: 3 / 4; background: var(--surface-2); }
+.cup img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease-out); }
+@media (hover: hover) and (pointer: fine) { .cup:hover img { transform: scale(1.04); } }
+.cup figcaption { margin-top: 12px; font: 700 1.0625rem/1.3 var(--display); }
+@media (max-width: 640px) { .rail-btns { display: none; } .rail { grid-auto-columns: 72vw; } }
+
+/* Reviews */
+.reviews .wrap { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(40px, 7vw, 96px); align-items: start; }
+.score { font: 800 clamp(6rem, 13vw, 10rem)/.85 var(--display); letter-spacing: -.05em; color: var(--accent); }
+.stars { display: flex; gap: 3px; color: var(--accent); font-size: 1.375rem; margin-top: 18px; }
+.score-meta { margin-top: 12px; color: var(--muted); }
+.reviews .btn { margin-top: 28px; }
+.quotes { display: grid; gap: 16px; }
+.quote { margin: 0; padding: 28px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
+.quote p { font: 600 1.1875rem/1.45 var(--display); letter-spacing: -.01em; color: var(--ink); }
+.q-stars { display: inline-flex; align-items: center; gap: 4px; color: var(--accent); font-weight: 600; }
+.quote footer { margin-top: 16px; display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--muted); font-size: .9375rem; }
+@media (max-width: 900px) { .reviews .wrap { grid-template-columns: 1fr; } }
+
+/* Gallery */
+.gallery h2 { margin-bottom: 40px; }
+.masonry { display: flex; gap: 16px; align-items: flex-start; }
+.masonry-col { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+@media (max-width: 640px) { .masonry, .masonry-col { gap: 10px; } }
+.shot { display: block; width: 100%; margin: 0; padding: 0; border: 0; background: var(--surface-2); border-radius: var(--radius-sm); overflow: hidden; cursor: zoom-in; break-inside: avoid; }
+.shot img { width: 100%; transition: transform .7s var(--ease-out), opacity .3s; }
+@media (hover: hover) and (pointer: fine) { .shot:hover img { transform: scale(1.035); } }
+dialog.lightbox { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; margin: 0; padding: 0; border: 0; background: rgba(6, 10, 18, .94); color: #fff; }
+dialog.lightbox[open] { display: grid; place-items: center; animation: fade .2s var(--ease-out); }
+dialog.lightbox::backdrop { background: transparent; }
+.lightbox img { max-width: min(92vw, 1100px); max-height: 84dvh; width: auto; border-radius: 12px; animation: pop .3s var(--ease-out); }
+.lb-btn { position: fixed; width: 52px; height: 52px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .2); background: rgba(255, 255, 255, .08); color: #fff; display: grid; place-items: center; cursor: pointer; font-size: 1.4rem; transition: background-color .2s, transform .16s var(--ease-out); }
+.lb-btn:hover { background: rgba(255, 255, 255, .18); }
+.lb-btn:active { transform: scale(.94); }
+.lb-close { top: 16px; right: 16px; }
+.lb-prev { left: 16px; top: 50%; translate: 0 -50%; }
+.lb-next { right: 16px; top: 50%; translate: 0 -50%; }
+.lb-count { position: fixed; bottom: 20px; left: 50%; translate: -50% 0; font-size: .875rem; opacity: .75; font-variant-numeric: tabular-nums; }
+@keyframes fade { from { opacity: 0; } }
+@keyframes pop { from { opacity: 0; transform: scale(.97); } }
+
+/* Visit */
+.visit { background: var(--surface); border-top: 1px solid var(--line); }
+.visit .wrap { display: grid; grid-template-columns: 1.25fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: stretch; }
+.map { border-radius: var(--radius); overflow: hidden; min-height: 460px; background: var(--surface-2); border: 1px solid var(--line); }
+.map iframe { width: 100%; height: 100%; min-height: 460px; border: 0; display: block; }
+.visit h2 { margin-bottom: 28px; }
+.detail { display: grid; grid-template-columns: 28px 1fr; gap: 4px 12px; padding: 18px 0; border-top: 1px solid var(--line); }
+.detail i { font-size: 1.375rem; color: var(--accent); grid-row: span 2; margin-top: 2px; }
+.detail b { font-weight: 600; }
+.detail .sub, .detail address { color: var(--muted); font-style: normal; font-size: .9875rem; }
+.detail a { text-decoration-color: color-mix(in srgb, var(--accent) 50%, transparent); text-underline-offset: 3px; }
+.hours { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: .9375rem; color: var(--muted); }
+.hours td { padding: 3px 0; }
+.hours td:last-child { text-align: right; }
+.hours tr.today td { color: var(--ink); font-weight: 600; }
+.visit-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.socials { display: flex; gap: 10px; margin-top: 24px; }
+.socials a { width: 48px; height: 48px; border-radius: 999px; display: grid; place-items: center; border: 1px solid var(--line); background: var(--bg); font-size: 1.375rem; text-decoration: none; transition: border-color .2s, color .2s, transform .16s var(--ease-out); }
+.socials a:hover { border-color: var(--accent); color: var(--accent); }
+.socials a:active { transform: scale(.94); }
+@media (max-width: 900px) { .visit .wrap { grid-template-columns: 1fr; } .map, .map iframe { min-height: 340px; } }
+
+/* Footer */
+footer.site { padding-block: 72px 32px; overflow: hidden; }
+.foot-word { font: 800 clamp(5rem, 21vw, 19rem)/.8 var(--display); letter-spacing: -.05em; color: var(--accent); margin: 0 0 40px -.04em; white-space: nowrap; }
+.foot-row { display: flex; flex-wrap: wrap; gap: 16px 40px; justify-content: space-between; color: var(--muted); font-size: .9375rem; border-top: 1px solid var(--line); padding-top: 24px; }
+.foot-row nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.foot-row a { text-decoration: none; }
+.foot-row a:hover { color: var(--ink); }
+
+/* Mobile action bar */
+.actionbar { display: none; }
+@media (max-width: 760px) {
+  .actionbar {
+    position: fixed; z-index: 40; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom));
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 8px; border-radius: 999px;
+    background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--line); box-shadow: var(--shadow);
+    transform: translateY(140%); transition: transform .35s var(--ease-out);
+  }
+  .actionbar.show { transform: none; }
+  .actionbar .btn { --h: 48px; padding: 0 12px; }
+  footer.site { padding-bottom: 104px; }
+}
+
+/* Reveal */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease-out), transform .7s var(--ease-out); transition-delay: calc(var(--i, 0) * 70ms); }
+  .reveal.in { opacity: 1; transform: none; }
+  .hero-copy > *, .hero-media { animation: rise .9s var(--ease-out) both; }
+  .hero-copy > :nth-child(2) { animation-delay: .08s; }
+  .hero-copy > :nth-child(3) { animation-delay: .16s; }
+  .hero-media { animation-delay: .12s; }
+}
+@keyframes rise { from { opacity: 0; transform: translateY(22px); } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Blue 36 Cafe, back to top">
+      <b>BLUE <span>36</span></b>
+      <small>CAFE RESTAURANT</small>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#dishes">Food</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch colour theme"><i class="ph ph-moon" aria-hidden="true"></i></button>
+    <a class="btn btn-primary" href="tel:+61292212427"><i class="ph ph-phone" aria-hidden="true"></i>Call to book</a>
+    <button class="icon-btn menu-toggle" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><i class="ph ph-list" aria-hidden="true"></i></button>
+  </div>
+</header>
+<nav class="drawer" id="drawer" aria-label="Mobile">
+  <a href="#dishes">Food</a>
+  <a href="#menu">Menu</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#visit">Visit</a>
+  <a class="btn btn-primary" href="tel:+61292212427"><i class="ph ph-phone" aria-hidden="true"></i>Call to book</a>
+</nav>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1 id="hero-title">Brunch on <em>Blue&nbsp;Street.</em></h1>
+        <p class="lede">Brunch, bowls and specialty coffee from 6am, in Greenwood Plaza opposite North Sydney Station.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="tel:+61292212427"><i class="ph ph-phone" aria-hidden="true"></i>Call to book</a>
+          <a class="btn btn-ghost" href="#menu">See the menu<i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="img/19-1400.webp" srcset="img/19-720.webp 540w, img/19-1400.webp 1050w" sizes="(min-width: 900px) 45vw, 100vw" width="1050" height="1400" alt="A Blue 36 breakfast spread from above: eggs, bacon, mushrooms, sourdough toast and a bowl with passionfruit" fetchpriority="high">
+        <img class="mini" src="img/5-720.webp" width="616" height="720" alt="Flat white with a rosetta latte art pattern in a blue cup" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <div class="facts">
+    <div class="wrap">
+      <a class="fact" href="https://maps.app.goo.gl/XGDb5CXQW2yVN7CA8" target="_blank" rel="noopener">
+        <i class="ph ph-map-pin" aria-hidden="true"></i>
+        <div><b>Shop P02, 36 Blue St</b><span>Greenwood Plaza, opposite the station</span></div>
+      </a>
+      <a class="fact" href="tel:+61292212427">
+        <i class="ph ph-phone" aria-hidden="true"></i>
+        <div><b>(02) 9221 2427</b><span>Call for bookings and orders</span></div>
+      </a>
+      <a class="fact" href="#visit">
+        <i class="ph ph-clock" aria-hidden="true"></i>
+        <div><b id="openNow">Open from 6am weekdays</b><span>Mon to Sat, closed Sunday</span></div>
+      </a>
+    </div>
+  </div>
+
+  <section class="section about" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="about-media reveal">
+        <img class="a1" src="img/interior-2-720.webp" srcset="img/interior-2-720.webp 542w, img/interior-2-1400.webp 1054w" sizes="(min-width: 900px) 40vw, 88vw" width="542" height="720" alt="The illuminated Blue 36 Cafe Restaurant sign above leather banquette seating" loading="lazy">
+        <img class="a2" src="img/cafe-720.webp" width="655" height="720" alt="Blue 36 shopfront at night, glass doors open onto the plaza" loading="lazy">
+      </div>
+      <div class="reveal" style="--i:1">
+        <h2 id="about-title">Your table on Blue Street.</h2>
+        <p class="lede">Leather banquettes, timber tables and a coffee machine that rarely rests. Blue 36 sits inside Greenwood Plaza, opposite North Sydney Station.</p>
+        <p class="lede">Stop in for a quick coffee before work, or settle in for a proper sit-down brunch.</p>
+        <div class="owner-note">
+          <span class="tbc"><i class="ph ph-pencil-simple" aria-hidden="true"></i>Owner's story</span>
+          <span>Placeholder: a few lines from the owner about how Blue 36 started and what they care about.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section sig" id="dishes" aria-labelledby="dishes-title" style="padding-top:0">
+    <div class="wrap">
+      <h2 id="dishes-title" class="reveal">Plates people come back for.</h2>
+      <p class="lede reveal" style="--i:1">Colourful bowls, stacked pancakes and burgers that need two hands. A taste of the kitchen.</p>
+      <span class="tbc reveal" style="margin-top:16px;--i:2"><i class="ph ph-camera" aria-hidden="true"></i>Photos to refresh for the new menu</span>
+      <div class="bento">
+        <figure class="dish d1 reveal">
+          <div class="frame"><img src="img/17-720.webp" srcset="img/17-720.webp 540w, img/17-1400.webp 1050w" sizes="(min-width: 960px) 26vw, (min-width: 560px) 50vw, 100vw" width="540" height="720" alt="Bowl topped with granola, coconut, banana, strawberries, blueberries, kiwi and passionfruit" loading="lazy"></div>
+          <figcaption><b>Fruit &amp; granola bowl</b></figcaption>
+        </figure>
+        <figure class="dish d2 reveal" style="--i:1">
+          <div class="frame"><img src="img/14-1400.webp" srcset="img/14-720.webp 720w, img/14-1400.webp 1400w" sizes="(min-width: 960px) 45vw, 100vw" width="720" height="540" alt="Stack of pancakes with whipped cream, caramel drizzle, strawberries and blueberries" loading="lazy"></div>
+          <figcaption><b>Pancake stack with berries</b></figcaption>
+        </figure>
+        <figure class="dish d3 reveal" style="--i:2">
+          <div class="frame"><img src="img/3-720.webp" srcset="img/3-720.webp 540w, img/3-1400.webp 1050w" sizes="(min-width: 960px) 26vw, (min-width: 560px) 50vw, 100vw" width="540" height="720" alt="Poke bowl with diced tuna, mango, corn, red cabbage, cucumber, carrot and pickled onion" loading="lazy"></div>
+          <figcaption><b>Poke bowl</b></figcaption>
+        </figure>
+        <figure class="dish d4 reveal" style="--i:3">
+          <div class="frame"><img src="img/15-720.webp" srcset="img/15-720.webp 720w, img/15-1400.webp 1400w" sizes="(min-width: 960px) 22vw, (min-width: 560px) 50vw, 100vw" width="720" height="542" alt="Smashed avocado with two poached eggs on a bed of quinoa" loading="lazy"></div>
+          <figcaption><b>Avocado &amp; poached eggs</b></figcaption>
+        </figure>
+        <figure class="dish d5 reveal" style="--i:4">
+          <div class="frame"><img src="img/4-720.webp" srcset="img/4-720.webp 540w, img/4-1400.webp 1050w" sizes="(min-width: 960px) 22vw, (min-width: 560px) 50vw, 100vw" width="540" height="720" alt="Crispy chicken burger with fries and tomato sauce on a green checked paper" loading="lazy"></div>
+          <figcaption><b>Crispy chicken burger</b></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section menu" id="menu" aria-labelledby="menu-title">
+    <div class="wrap">
+      <div class="menu-head">
+        <h2 id="menu-title" class="reveal">The menu</h2>
+        <p class="menu-sub reveal" style="--i:1">Brunch, bowls, lunch and a full drinks list. Prices in AUD.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Menu sections" id="menuTabs">
+        <span class="tab-pill" aria-hidden="true"></span>
+      </div>
+      <div id="menuPanels"></div>
+      <div class="menu-foot">
+        <div>
+          <p>Please let us know of any allergies. <b>GF</b> gluten free, <b>DF</b> dairy free, <b>V</b> vegetarian. <b>A</b> Australian, <b>I</b> imported, <b>M</b> mixed.</p>
+          <p>5% surcharge on Saturdays &amp; Sundays, 10% on public holidays. No card surcharge.</p>
+        </div>
+        <a class="btn btn-ghost" href="tel:+61292212427"><i class="ph ph-phone" aria-hidden="true"></i>(02) 9221 2427</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section coffee" aria-labelledby="coffee-title">
+    <div class="wrap head">
+      <h2 id="coffee-title" class="reveal">Coffee first.</h2>
+      <div class="rail-btns">
+        <button class="icon-btn" type="button" data-rail="-1" aria-label="Scroll drinks left"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+        <button class="icon-btn" type="button" data-rail="1" aria-label="Scroll drinks right"><i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <div class="rail" id="rail" tabindex="0" aria-label="Drinks photos">
+      <figure class="cup"><div class="frame"><img src="img/5-720.webp" width="616" height="720" alt="Rosetta latte art on a flat white" loading="lazy"></div><figcaption>Latte art, every cup</figcaption></figure>
+      <figure class="cup"><div class="frame"><img src="img/6-720.webp" width="665" height="720" alt="Matcha latte with a leaf pattern and matcha dusting in a glass" loading="lazy"></div><figcaption>Matcha latte</figcaption></figure>
+      <figure class="cup"><div class="frame"><img src="img/13-720.webp" width="540" height="720" alt="Tall iced black coffee with a straw on a timber table" loading="lazy"></div><figcaption>Iced coffee</figcaption></figure>
+      <figure class="cup"><div class="frame"><img src="img/10-720.webp" width="540" height="720" alt="Warm drink topped with foam and cinnamon in a brown ceramic cup" loading="lazy"></div><figcaption>Something warm</figcaption></figure>
+      <figure class="cup"><div class="frame"><img src="img/7-720.webp" width="405" height="720" alt="Tall chocolate milkshake with a straw" loading="lazy"></div><figcaption>Shakes &amp; smoothies</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section reviews" id="reviews" aria-labelledby="reviews-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="reveal">
+        <h2 id="reviews-title" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Reviews</h2>
+        <div class="score" aria-label="Rated 4.7 out of 5">4.7</div>
+        <div class="stars" aria-hidden="true"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i></div>
+        <p class="score-meta">From 527 Google reviews, October 2026.</p>
+        <a class="btn btn-ghost" href="https://maps.app.goo.gl/XGDb5CXQW2yVN7CA8" target="_blank" rel="noopener">Read reviews on Google<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="quotes">
+        <blockquote class="quote reveal" style="--i:1"><p>“I tried the Morning steak. The meat was cooked to a perfect medium, and the braised kale was unexpectedly delicious.”</p><footer><span>Sienna Y., Google review</span><span class="q-stars" aria-label="5 stars"><i class="ph-fill ph-star" aria-hidden="true"></i>5</span></footer></blockquote>
+        <blockquote class="quote reveal" style="--i:2"><p>“The staff was wonderful. My food was delicious (Cocochia) and my latte was also very good.”</p><footer><span>Kim M., Google review</span><span class="q-stars" aria-label="5 stars"><i class="ph-fill ph-star" aria-hidden="true"></i>5</span></footer></blockquote>
+        <blockquote class="quote reveal" style="--i:3"><p>“Busy Cafe with a fantastic selection of tasty fresh dishes. Great for breakfast, brunch, lunch or just a snack.”</p><footer><span>Vince B., Google review</span><span class="q-stars" aria-label="5 stars"><i class="ph-fill ph-star" aria-hidden="true"></i>5</span></footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery" id="gallery" aria-labelledby="gallery-title" style="padding-top:0">
+    <div class="wrap">
+      <h2 id="gallery-title" class="reveal">From the tables.</h2>
+      <div class="masonry" id="masonry"></div>
+    </div>
+  </section>
+
+  <section class="section visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div class="map reveal">
+        <iframe title="Map showing Blue 36 Cafe on Blue St, North Sydney" src="https://www.google.com/maps?q=Blue+36+Cafe,+36+Blue+St,+North+Sydney+NSW+2060&ll=-33.8407323,151.2075779&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <div class="reveal" style="--i:1">
+        <h2 id="visit-title">Come say hello.</h2>
+        <div class="detail">
+          <i class="ph ph-map-pin" aria-hidden="true"></i>
+          <b>Address</b>
+          <address>Shop P02, Greenwood Plaza<br>36 Blue St, North Sydney NSW 2060<br>Opposite North Sydney Station</address>
+        </div>
+        <div class="detail">
+          <i class="ph ph-clock" aria-hidden="true"></i>
+          <b>Opening hours</b>
+          <div class="sub">
+            <table class="hours" id="hoursTable">
+              <tr data-days="1"><td>Monday</td><td>6am to 3pm</td></tr>
+              <tr data-days="2 3 4"><td>Tuesday to Thursday</td><td>6am to 3:30pm</td></tr>
+              <tr data-days="5"><td>Friday</td><td>6am to 3pm</td></tr>
+              <tr data-days="6"><td>Saturday</td><td>7am to 2pm</td></tr>
+              <tr data-days="0"><td>Sunday</td><td>Closed</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="detail">
+          <i class="ph ph-phone" aria-hidden="true"></i>
+          <b>Phone</b>
+          <span class="sub"><a href="tel:+61292212427">(02) 9221 2427</a></span>
+        </div>
+        <div class="visit-ctas">
+          <a class="btn btn-primary" href="tel:+61292212427"><i class="ph ph-phone" aria-hidden="true"></i>Call to book</a>
+          <a class="btn btn-ghost" href="https://maps.app.goo.gl/XGDb5CXQW2yVN7CA8" target="_blank" rel="noopener">Get directions<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="socials">
+          <a href="https://www.instagram.com/blue36cafe_northsydney" target="_blank" rel="noopener" aria-label="Blue 36 Cafe on Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/blue36cafe/" target="_blank" rel="noopener" aria-label="Blue 36 Cafe on Facebook"><i class="ph ph-facebook-logo" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="foot-word" aria-hidden="true">BLUE 36</p>
+    <div class="foot-row">
+      <span>Blue 36 Cafe, 36 Blue St, North Sydney NSW 2060</span>
+      <nav aria-label="Footer">
+        <a href="tel:+61292212427">(02) 9221 2427</a>
+        <a href="https://www.instagram.com/blue36cafe_northsydney" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/blue36cafe/" target="_blank" rel="noopener">Facebook</a>
+        <a href="#top">Back to top</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div class="actionbar" id="actionbar">
+  <a class="btn btn-primary" href="tel:+61292212427"><i class="ph ph-phone" aria-hidden="true"></i>Call to book</a>
+  <a class="btn btn-ghost" href="https://maps.app.goo.gl/XGDb5CXQW2yVN7CA8" target="_blank" rel="noopener"><i class="ph ph-navigation-arrow" aria-hidden="true"></i>Directions</a>
+</div>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" type="button" id="lbClose" aria-label="Close photo viewer"><i class="ph ph-x" aria-hidden="true"></i></button>
+  <button class="lb-btn lb-prev" type="button" id="lbPrev" aria-label="Previous photo"><i class="ph ph-caret-left" aria-hidden="true"></i></button>
+  <button class="lb-btn lb-next" type="button" id="lbNext" aria-label="Next photo"><i class="ph ph-caret-right" aria-hidden="true"></i></button>
+  <span class="lb-count" id="lbCount" aria-live="polite"></span>
+</dialog>
+
+<script>
+/* MENU DATA, transcribed from the Blue 36 printed menu (Oct 2026).
+   Item: n name, d description, p price (string; "5 / 6" for two sizes), t dietary tags,
+   hp protein note, o options [[label, price]]. Group: cols = size labels, wide = spans both columns. */
+const MENU = [
+  { id: 'brunch', label: 'Brunch', groups: [
+    { title: 'Brunch', wide: true, items: [
+      { n: 'Eggs You Like', t: 'V', p: '14', d: 'Two free-range eggs, Pepe Saya butter, sourdough' },
+      { n: 'Big Breakfast Plate', p: '29', d: 'Bolognese meatball, maple bacon, chunky house hash, eggs your way, avocado, mushrooms, braised kale, roasted tomato, Pepe Saya butter, sourdough' },
+      { n: 'Morning Steak', p: '32', hp: 'High protein 50g', d: '150g grass-fed Angus sirloin (medium), chunky house hash, eggs your way, braised kale, chimichurri, pickled chilli, beetroot' },
+      { n: 'Creamy Miso Salmon', t: 'A', p: '32', hp: 'High protein 40g', d: '150g Tasmanian salmon, chunky house hash, avocado, mushroom, roasted tomato, pickled beetroot, creamy miso sauce' },
+      { n: 'Breakfast Bun', p: '16', d: 'Maple bacon, free-range fried egg, hash brown, tomato relish, aioli, milk bun' },
+      { n: 'Smashed Avo', t: 'V', p: '22', d: 'Free-range poached eggs, shichimi, cherry tomato, coriander, pickled beetroot, feta & lemon dressing, sourdough' },
+      { n: 'Cauliflower on Toast', t: 'V', p: '22', d: 'Crispy cauliflower, free-range fried egg, stracciatella, parmesan, almond, pickled beetroot, hot honey, sourdough' },
+      { n: 'Chilli Chorizo Scram', p: '25', d: 'Omelette, braised kale, pickled zucchini, parmesan, pepper chilli oil, parsley, sourdough' },
+      { n: 'Cocomisu French Toast', t: 'V', p: '24', d: 'Caramelised brioche, cacao nibs, vanilla mascarpone mousse, ladyfingers, espresso anglaise' },
+      { n: 'Eggs Benne', t: 'A', d: 'Free-range eggs, hollandaise, braised kale, pickled beetroot, puffed wild rice, house croissant', o: [['Leg ham', '21'], ['Maple bacon', '24'], ['Prosciutto', '24'], ['Smoked salmon', '25']] }
+    ] },
+    { title: 'Add-ons', wide: true, addons: [
+      ['7', 'Smoked salmon, sous vide chicken, Bolognese meatball'],
+      ['5', 'Chunky house hash brown (thick-cut, golden crust, creamy centre), maple bacon, chorizo, leg ham, avocado (smashed or sliced), halloumi, mushrooms, tomato (roasted or fresh), roasted pumpkin'],
+      ['4', 'Free-range egg, hash brown, braised kale'],
+      ['1', 'Pepe Saya butter, house chilli oil, hot honey']
+    ] }
+  ] },
+  { id: 'bowls', label: 'Bowls', groups: [
+    { title: 'Vitality bowls', items: [
+      { n: 'Grayola', t: 'GF V', p: '16', d: 'Almond & quinoa granola, Greek yoghurt, seasonal fruits, honey, chia seeds, coconut flakes, barberries' },
+      { n: 'Cocochia', t: 'GF DF V', p: '19', d: 'Coconut-infused overnight chia seeds, mango, seasonal fruits, barberries, cacao nibs, pistachio' },
+      { n: 'Bircher Protein Bowl', t: 'V', p: '19', d: 'Overnight oats soaked in oat milk & whey protein, seasonal fruits, barberries, assorted nuts, chia seeds, coconut flakes (optional peanut butter)' },
+      { n: 'Acai Bowl', t: 'GF DF V', p: '20', d: 'Blended acai, seasonal fruits, almond & quinoa granola, coconut flakes, chia seeds, barberries' }
+    ] },
+    { title: 'Super bowls', items: [
+      { n: 'Healthy Grain Bowl', t: 'DF A', d: 'Quinoa, chickpea, pumpkin seeds, avocado, braised kale, tomato, cucumber, carrot, rocket, miso sesame dressing', o: [['Halloumi & pumpkin', '23'], ['Sous vide chicken', '25'], ['Herb mayo chicken', '25'], ['Salmon sashimi', '27'], ['Spicy mayo salmon', '27']] },
+      { n: 'Poke Super Bowl', t: 'DF A', d: 'Black rice, cabbage, tomato, cucumber, carrot, avocado, crab meat, pickled ginger & beetroot, coriander, roasted seaweed, puffed wild rice, ground wasabi green pea. Choose wasabi yuzu or miso sesame dressing.', o: [['Sous vide chicken', '27'], ['Salmon sashimi', '29']] }
+    ] }
+  ] },
+  { id: 'lunch', label: 'Lunch', groups: [
+    { title: 'Gourmet sandwiches', items: [
+      { n: 'B.L.A.T', p: '18', d: 'Maple bacon (2), lettuce, avo, tomato, aioli, Turkish bread' },
+      { n: 'Classic Chicken Avocado', p: '19', hp: 'High protein 40g', d: '130g sous vide chicken breast, avocado, lettuce, cheddar cheese, aioli, sourdough' },
+      { n: 'Mortadella Focaccia', p: '15', d: 'Fennel salami, ricotta, pickled zucchini, rocket, balsamic, hot honey' },
+      { n: 'Prosciutto Focaccia', p: '15', d: 'Stracciatella, rocket, sun-dried tomato, pesto, balsamic' },
+      { n: 'Pastrami Focaccia', p: '15', d: 'Provolone, roasted capsicum, roasted tomato, pickled onion, rocket, wasabi mayo' },
+      { n: 'Chicken Focaccia', p: '15', d: 'Sous vide chicken breast, pickled zucchini, rocket, lettuce, pesto, wasabi mayo' },
+      { n: 'Pumpkin Focaccia', p: '15', d: 'Stracciatella, pepitas, pickled beetroot, rocket, hot honey' }
+    ] },
+    { title: 'Burgers', note: 'Served with chips or coleslaw.', items: [
+      { n: 'Double Cheese Burger', p: '20', d: 'American cheddar, pickled cucumber, lettuce, tomato, relish, special burger sauce' },
+      { n: 'Buttermilk Chicken Burger', p: '23', d: 'Beer-battered chicken thigh fillet, lettuce, tomato, Korean mayo' },
+      { n: 'Crispy Fish Burger', t: 'A', p: '24', d: 'Barramundi, American cheddar, lettuce, pickled onion, salmon tartare' }
+    ] },
+    { title: 'Pasta, risotto & soup', items: [
+      { n: 'Meatball Bolognese', p: '28', d: 'Spaghetti, mushrooms, parmesan' },
+      { n: 'Seafood Pasta', t: 'M', p: '28', d: 'Prawns, barramundi, squid, clams, casarecce, tomato, red curry bisque, herbed breadcrumbs, coriander. Served with focaccia.' },
+      { n: 'Chicken Mushroom Risotto', t: 'GF', p: '25', d: 'Oregano-seasoned chicken, mushrooms, green peas, parmesan & maple bacon' },
+      { n: 'Seafood Chowder', t: 'M', p: '25', d: 'Prawns, clams, squid, barramundi, potato, carrot, red onion, celery. Choice of crusted puff pastry (15 mins) or focaccia (7 to 10 mins).' }
+    ] },
+    { title: 'Sides', items: [
+      { n: 'House Coleslaw', p: '5' },
+      { n: 'House Pickles', p: '5' },
+      { n: 'Bowl of Chips', p: '8' },
+      { n: 'Glazed Rocket & Pear Salad', p: '9', d: 'Parmesan cheese, mixed nuts, pumpkin seed, balsamic glaze' }
+    ] }
+  ] },
+  { id: 'coffee', label: 'Coffee & tea', groups: [
+    { title: 'Coffee', cols: 'Regular / Large', note: 'Extra shot or decaf +0.7, flavours +0.3, alternative milk +0.5.', items: [
+      { n: 'Flat White', p: '5 / 6' }, { n: 'Latte, Cappuccino', p: '5 / 6' }, { n: 'Mocha', p: '5.3 / 6.3' },
+      { n: 'Piccolo, Macchiato', p: '4.5' }, { n: 'Long Black', p: '5 / 6', d: 'Seasonal single origin' }, { n: 'Short Black', p: '4.5', d: 'Seasonal single origin' }
+    ] },
+    { title: 'Iced', cols: 'Regular / Large', items: [
+      { n: 'Iced Long Black', p: '6 / 7' }, { n: 'Iced Latte', p: '6.5 / 7.5' }, { n: 'Tiramisu Iced Latte', p: '11', d: 'Contains rum' },
+      { n: 'Earl Grey Hojicha Iced Latte', p: '10' }, { n: 'Iced Chocolate', p: '6.5 / 7.5' }, { n: 'Iced Coffee', p: '7 / 8' },
+      { n: 'Iced Mocha', p: '7 / 8' }, { n: 'Iced Matcha', p: '7 / 8' }, { n: 'Iced Matcha, Mango or Berries', p: '8' }
+    ] },
+    { title: 'Non coffee', cols: 'Regular / Large', items: [
+      { n: 'Hot Chocolate', p: '5 / 6' }, { n: 'Matcha Latte', p: '5 / 6' }, { n: 'Chai Latte', p: '5 / 6' }
+    ] },
+    { title: 'Filter', items: [
+      { n: 'Cold Drip', p: '7' }, { n: 'Mont Blanc', p: '9', d: 'Cold drip with yuzu silk cloud' }, { n: 'V60 Pour Over', p: '7' }
+    ] },
+    { title: 'Organic tea', items: [
+      { n: 'English Breakfast', p: '5' }, { n: 'Earl Grey', p: '5' }, { n: 'Green Tea', p: '5' }, { n: 'Peppermint', p: '5' },
+      { n: 'Yuzu Kukicha', p: '6' }, { n: 'Relaxing Herbs', p: '6' }, { n: 'Brew Chai', p: '7', d: 'Fresh chai brewed in milk' }
+    ] }
+  ] },
+  { id: 'juice', label: 'Juice & smoothies', groups: [
+    { title: 'Fresh juice', cols: 'Regular / Large', items: [
+      { n: 'Lemony OJ', p: '8 / 9' }, { n: 'Just Apple', p: '8 / 9' }, { n: 'Watermelon', p: '8 / 9' },
+      { n: 'A.C.C', p: '8.5 / 9.5', d: 'Apple, carrot, celery' }, { n: 'Immunity', p: '8.5 / 9.5', d: 'Orange, carrot, ginger, turmeric' },
+      { n: 'Green Detox', p: '8.5 / 9.5', d: 'Apple, lemon, parsley, ginger' }, { n: 'Rise & Shine', p: '8.5 / 9.5', d: 'Watermelon, lemon, ginger' },
+      { n: 'Golden Citrus', p: '8.5 / 9.5', d: 'Orange, lemon, grapefruit' }
+    ] },
+    { title: 'Smoothies with benefits', items: [
+      { n: 'Daily Protein Fix', t: 'DF GF V', p: '12', d: 'Plant protein, cacao, banana, peanut butter, almond milk, honey' },
+      { n: 'Nutty Protein', t: 'DF V', p: '12', d: 'Plant protein, oats, banana, peanut butter, coconut yoghurt, almond milk, sea salt' },
+      { n: 'Collagen Kick', t: 'DF GF V', p: '12', d: 'Collagen peptide, strawberries, berry compote, OJ, mango, honey, coconut milk, coconut yoghurt, coconut water' }
+    ] },
+    { title: 'Classic smoothies', items: [
+      { n: 'Just Banana', p: '8' }, { n: 'Mixed Berries & Banana', p: '8.5' }, { n: 'Mango Bliss', p: '9' },
+      { n: 'Gym Junkie', p: '9.5', d: 'Banana, yoghurt, whey protein, low fat milk' }
+    ] },
+    { title: 'Milkshakes', note: 'Make it thick +1.0', items: [
+      { n: 'Chocolate', p: '8' }, { n: 'Vanilla', p: '8' }, { n: 'Coffee', p: '9', d: 'Two espresso shots' }
+    ] },
+    { title: 'Chilled drinks', items: [
+      { n: 'Purezza Sparkling Water', p: '3.9 / 5.9', d: '350ml or 750ml' }, { n: 'Bottled Spring Water', p: '3.5', d: '600ml' },
+      { n: 'Coke or Zero Sugar Coke', p: '4.8' }, { n: 'Zero Caffeine Zero Sugar', p: '4.8' }
+    ] }
+  ] },
+  { id: 'bar', label: 'Beer & wine', groups: [
+    { title: 'Beer', items: [
+      { n: 'Mountain Culture Lager', p: '8.5', d: 'Aussie premium lager' }, { n: 'Mountain Culture IPA', p: '8.5', d: 'Juice Trip' },
+      { n: 'Young Henrys Pale Ale', p: '8', d: 'Newtowner' }, { n: 'Heaps Normal Quiet XPA', p: '7.5', d: 'Non-alcoholic XPA' }
+    ] },
+    { title: 'White & rosé', cols: 'Glass / Bottle', items: [
+      { n: 'Matua Teha Sauvignon Blanc', p: '9 / 38', d: 'Marlborough, New Zealand' },
+      { n: "Devil's Lair 'Honeybomb' Chardonnay", p: '9.5 / 39', d: 'Margaret River, Western Australia' },
+      { n: "T'Gallant Prosecco", p: '10', d: '200ml. Mornington, Victoria' },
+      { n: 'Squealing Pig Rosé', p: '10 / 40', d: 'South East Australia' }
+    ] },
+    { title: 'Red', cols: 'Glass / Bottle', items: [
+      { n: "St Huberts 'The Stag' Pinot Noir", p: '9 / 38', d: 'Yarra Valley, Victoria' },
+      { n: 'Saltram Skins Shiraz', p: '9.5 / 39', d: 'Barossa Valley, SA' },
+      { n: 'Wynns Siding Cabernet Sauvignon', p: '25', d: '375ml. Coonawarra, SA' }
+    ] },
+    { title: 'BYO', items: [{ n: 'Corkage', p: '5', d: 'Per bottle' }] }
+  ] }
+];
+const TAG_NAMES = { GF: 'Gluten free', DF: 'Dairy free', V: 'Vegetarian', A: 'Australian', I: 'Imported', M: 'Mixed' };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const tagHTML = t => t ? `<span class="tags">${t.split(' ').map(x => `<abbr title="${TAG_NAMES[x]}">${x}</abbr>`).join('')}</span>` : '';
+const itemHTML = it => `<div class="item"><div class="item-top"><b>${esc(it.n)}${tagHTML(it.t)}</b>${it.p ? `<span class="dots"></span><span class="price">${esc(it.p)}</span>` : ''}</div>`
+  + (it.hp ? `<p class="protein">${esc(it.hp)}</p>` : '') + (it.d ? `<p>${esc(it.d)}</p>` : '')
+  + (it.o ? `<ul class="opts">${it.o.map(([l, p]) => `<li><span>${esc(l)}</span><span class="dots"></span><span class="price">${esc(p)}</span></li>`).join('')}</ul>` : '') + '</div>';
+const groupHTML = g => `<div class="group${g.wide ? ' wide' : ''}"><div class="group-head"><h3>${esc(g.title)}</h3>${g.cols ? `<span class="cols">${esc(g.cols)}</span>` : ''}</div>`
+  + (g.note ? `<p class="group-note">${esc(g.note)}</p>` : '')
+  + (g.addons ? g.addons.map(([p, d]) => `<div class="addon"><span class="price">+${esc(p)}</span><p>${esc(d)}</p></div>`).join('') : `<div class="items">${g.items.map(itemHTML).join('')}</div>`) + '</div>';
+const tabsEl = document.getElementById('menuTabs');
+tabsEl.insertAdjacentHTML('beforeend', MENU.map((s, i) =>
+  `<button class="tab" role="tab" id="tab-${s.id}" aria-controls="p-${s.id}" aria-selected="${i === 0}"${i ? ' tabindex="-1"' : ''}><span>${esc(s.label)}</span></button>`).join(''));
+document.getElementById('menuPanels').innerHTML = MENU.map((s, i) =>
+  `<div class="panel" role="tabpanel" id="p-${s.id}" aria-labelledby="tab-${s.id}" tabindex="0"${i ? ' hidden' : ''}>${s.groups.map(groupHTML).join('')}</div>`).join('');
+
+/* Tabs with a sliding pill */
+const tabs = [...document.querySelectorAll('.tab')];
+const pill = document.querySelector('.tab-pill');
+function placePill(t) { pill.style.width = t.offsetWidth + 'px'; pill.style.transform = `translateX(${t.offsetLeft}px)`; }
+function selectTab(t, focus) {
+  tabs.forEach(x => {
+    const on = x === t;
+    x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1;
+    document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
+  });
+  placePill(t); if (focus) t.focus();
+  // Keep the active tab visible when the tab strip scrolls on phones.
+  tabsEl.scrollTo({ left: t.offsetLeft - (tabsEl.clientWidth - t.offsetWidth) / 2, behavior: 'smooth' });
+}
+tabs.forEach((t, i) => {
+  t.addEventListener('click', () => selectTab(t));
+  t.addEventListener('keydown', e => {
+    const d = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
+    if (d) { e.preventDefault(); selectTab(tabs[(i + d + tabs.length) % tabs.length], true); }
+    if (e.key === 'Home') { e.preventDefault(); selectTab(tabs[0], true); }
+    if (e.key === 'End') { e.preventDefault(); selectTab(tabs[tabs.length - 1], true); }
+  });
+});
+const initPill = () => placePill(tabs.find(t => t.getAttribute('aria-selected') === 'true'));
+document.fonts ? document.fonts.ready.then(initPill) : initPill();
+addEventListener('resize', initPill);
+
+/* Gallery + lightbox */
+const SHOTS = [
+  ['18', 1400, 758, 'Pancakes with strawberries and edible flowers beside a mushroom and poached egg plate'],
+  ['1', 540, 720, 'Eggs benedict with ham next to a croissant, with an iced matcha'],
+  ['interior', 405, 720, 'Blue 36 counter with the brass Blue lettering and a coffee machine'],
+  ['12', 540, 720, 'Almond croissant beside a latte'],
+  ['16', 720, 540, 'Hands holding a crispy chicken burger over a plate of fries'],
+  ['9', 540, 720, 'Avocado and feta on toast with bacon and poached eggs'],
+  ['2', 540, 720, 'Turkish roll filled with bacon and greens'],
+  ['20', 540, 720, 'Creamy prawn soup with sourdough on a wooden board'],
+  ['11', 540, 720, 'Hands holding a bowl of fried rice topped with sliced meat'],
+  ['8', 1400, 646, 'Warm salad bowl with grilled chicken and alfalfa sprouts']
+];
+const masonry = document.getElementById('masonry');
+// Real flex columns (not CSS columns) so tab order stays in reading order per column and design tools can read the layout.
+const shotHTML = SHOTS.map(([f, w, h, alt], i) =>
+  `<button class="shot reveal" style="--i:${i % 3}" type="button" data-i="${i}" aria-label="Open photo: ${esc(alt)}"><img src="img/${f}-720.webp" width="${w}" height="${h}" alt="${esc(alt)}" loading="lazy"></button>`
+);
+let galleryCols = 0;
+function layoutGallery() {
+  const n = matchMedia('(max-width: 640px)').matches ? 2 : 3;
+  if (n === galleryCols) return;
+  galleryCols = n;
+  // Greedy: drop each photo into the currently shortest column by aspect height.
+  const heights = Array(n).fill(0), cols = Array.from({ length: n }, () => []);
+  SHOTS.map(([, w, h], i) => [h / w, i]).sort((a, b) => b[0] - a[0])
+    .forEach(([r, i]) => { const c = heights.indexOf(Math.min(...heights)); cols[c].push([i, shotHTML[i]]); heights[c] += r; });
+  cols.forEach(c => c.sort((a, b) => a[0] - b[0]));
+  masonry.innerHTML = cols.map(c => `<div class="masonry-col">${c.map(x => x[1]).join('')}</div>`).join('');
+  // On first run the reveal observer below picks these up; on later relayouts, re-observe.
+  if (window.revealIO) masonry.querySelectorAll('.reveal').forEach(el => window.revealIO.observe(el));
+}
+layoutGallery();
+addEventListener('resize', layoutGallery);
+const lb = document.getElementById('lightbox'), lbImg = lb.insertBefore(new Image(), lb.firstChild), lbCount = document.getElementById('lbCount');
+let cur = 0, opener = null;
+function show(i) {
+  cur = (i + SHOTS.length) % SHOTS.length;
+  const [f, , , alt] = SHOTS[cur];
+  lbImg.src = `img/${f}-1400.webp`; lbImg.alt = alt;
+  lbImg.style.animation = 'none'; lbImg.offsetWidth; lbImg.style.animation = '';
+  lbCount.textContent = `${cur + 1} of ${SHOTS.length}`;
+}
+masonry.addEventListener('click', e => {
+  const b = e.target.closest('.shot'); if (!b) return;
+  opener = b; show(+b.dataset.i); lb.showModal(); document.getElementById('lbClose').focus();
+});
+document.getElementById('lbPrev').onclick = () => show(cur - 1);
+document.getElementById('lbNext').onclick = () => show(cur + 1);
+document.getElementById('lbClose').onclick = () => lb.close();
+lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+lb.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') show(cur - 1); if (e.key === 'ArrowRight') show(cur + 1); });
+lb.addEventListener('close', () => opener && opener.focus());
+
+/* Coffee rail buttons */
+const rail = document.getElementById('rail');
+document.querySelectorAll('[data-rail]').forEach(b => b.addEventListener('click', () => {
+  rail.scrollBy({ left: +b.dataset.rail * rail.querySelector('.cup').offsetWidth * 1.1, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+}));
+
+/* Mobile drawer */
+const menuBtn = document.getElementById('menuBtn'), drawer = document.getElementById('drawer');
+function setDrawer(open) {
+  drawer.classList.toggle('open', open); menuBtn.setAttribute('aria-expanded', open);
+  menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  menuBtn.querySelector('i').className = 'ph ' + (open ? 'ph-x' : 'ph-list');
+}
+menuBtn.addEventListener('click', () => setDrawer(!drawer.classList.contains('open')));
+drawer.addEventListener('click', e => { if (e.target.closest('a')) setDrawer(false); });
+addEventListener('keydown', e => { if (e.key === 'Escape' && drawer.classList.contains('open')) { setDrawer(false); menuBtn.focus(); } });
+
+/* Theme toggle */
+const themeBtn = document.getElementById('themeBtn'), root = document.documentElement;
+const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+function syncThemeIcon() { themeBtn.querySelector('i').className = 'ph ' + (isDark() ? 'ph-sun' : 'ph-moon'); themeBtn.setAttribute('aria-label', isDark() ? 'Switch to light theme' : 'Switch to dark theme'); }
+themeBtn.addEventListener('click', () => {
+  root.dataset.theme = isDark() ? 'light' : 'dark';
+  try { localStorage.setItem('b36-theme', root.dataset.theme); } catch (e) {}
+  syncThemeIcon();
+});
+syncThemeIcon();
+
+/* Open-now status, always computed in Sydney time. Hours as decimal [open, close]; null = closed. */
+const HOURS = { 0: null, 1: [6, 15], 2: [6, 15.5], 3: [6, 15.5], 4: [6, 15.5], 5: [6, 15], 6: [7, 14] };
+const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const fmtTime = h => { const hh = Math.floor(h), mm = Math.round((h - hh) * 60), ap = hh < 12 ? 'am' : 'pm', h12 = hh % 12 || 12; return h12 + (mm ? ':' + String(mm).padStart(2, '0') : '') + ap; };
+try {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat('en-AU', { timeZone: 'Australia/Sydney', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' }).formatToParts(new Date()).map(p => [p.type, p.value]));
+  const day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(parts.weekday);
+  const now = +parts.hour + parts.minute / 60;
+  const today = HOURS[day];
+  let label;
+  if (today && now >= today[0] && now < today[1]) label = `Open now until ${fmtTime(today[1])}`;
+  else if (today && now < today[0]) label = `Opens today at ${fmtTime(today[0])}`;
+  else { let d = (day + 1) % 7; while (!HOURS[d]) d = (d + 1) % 7; label = `Closed now. Opens ${d === (day + 1) % 7 ? 'tomorrow' : DAY_NAMES[d]} at ${fmtTime(HOURS[d][0])}`; }
+  document.getElementById('openNow').textContent = label;
+  document.querySelectorAll('#hoursTable tr').forEach(tr => tr.classList.toggle('today', tr.dataset.days.split(' ').includes(String(day))));
+} catch (e) { /* Static fallback text stays in place */ }
+
+/* Scroll-linked UI via observers (no scroll listeners) */
+const nav = document.querySelector('.nav'), bar = document.getElementById('actionbar');
+new IntersectionObserver(([e]) => {
+  nav.classList.toggle('scrolled', !e.isIntersecting);
+  bar.classList.toggle('show', !e.isIntersecting);
+}).observe(document.querySelector('.hero-ctas'));
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+window.revealIO = io;
+</script>
+</body>
+</html>
